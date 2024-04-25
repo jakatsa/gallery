@@ -29,7 +29,7 @@ function App() {
         {isLoading ? (
           <div className="text-6xl text-center mx-auto mt-32">Loading up</div>
         ) : (
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2  lg:gird-cols-3 image">
             {images.map((image) => (
               <Imagecontainer key={image.id} image={image} />
             ))}
